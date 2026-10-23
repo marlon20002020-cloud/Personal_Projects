@@ -1,0 +1,40 @@
+#EXPLICACION RRT ALGORITHM:
+
+Cada iteración:
+1. Genera punto aleatorio/ a veces cercano al goal con alguna probabilidad
+2. Busca nodo más cercano del árbol
+3. Extiende el árbol desde ESE nodo
+4. Agrega nueva rama
+
+5. AL final cuancdo llega al goal hace el path que toma en cuenta el la rama 
+de subsecuencia que siguio para llegar al goal, lo que no necesariamente sea el camino mas optimo.
+
+EL STEP SIZE ES UN LIMITE, como maximp pero habra puntos intermedios que no lo tomen en cuenta por eso aparecen resultados decimales.
+
+
+medidas importantes:
+
+time to first solution: el tiempo real que se demora en encontrar la solucion
+convergence over time solo para star RRT
+
+
+
+#EXPLICACION DE RRT_START ALGORITHM
+
+hace rewiring por esoe l costo es decimal
+
+estamos midiendo el convergence rate como  average (Cambio costo/cambio de numero de nodos))
+
+
+
+#EXPLICACION DE RRT_CONNECT BIDIRECTIONAL
+
+Sí → ambos árboles usan el MISMO random sample
+pero NO crecen igual
+
+el que esta en el goal crece hacia el nuevo nodo del de start
+
+
+
+YOV"
+Sí. Voy a mantener tu RRT básico, pero cambiaré el 0.1 fijo por una probabilidad que aumenta con el avance del algoritmo: baja al inicio para explorar y más alta después para empujar hacia el goal.
