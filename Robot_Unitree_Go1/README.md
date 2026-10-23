@@ -10,4 +10,4 @@ an IMU-based yaw-correction controller, which keeps the robot walking into a new
 
 Implementation
 
-Python, ROS2, Gazebo
+Python, ROS2, Gazebo,C++
