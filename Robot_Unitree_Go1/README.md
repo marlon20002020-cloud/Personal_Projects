@@ -8,6 +8,9 @@ robot. In the lab, we achieved all four gaits that are capable of walking withou
 an IMU-based yaw-correction controller, which keeps the robot walking into a new line.
 
 
-Implementation
+Implementation videos: 
+
+https://drive.google.com/drive/folders/10rma8GcQDoppsaAo4Hwlw5Y5jfi1T_NK?usp=sharing
+
 
 Python, ROS2, Gazebo,C++
